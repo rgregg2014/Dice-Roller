@@ -1,0 +1,15 @@
+{
+  "name": "dice-roller",
+  "version": "1.0.0",
+  "description": "(A collection of resources for the developmental DM.)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rae Gregg",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
