@@ -1,5 +1,10 @@
 * {
   box-sizing: (border-box);
   border: (1 px, red, solid);
-  background-color: antiquewhite;
+  background-color: whitesmoke;
+}
+.modifiers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

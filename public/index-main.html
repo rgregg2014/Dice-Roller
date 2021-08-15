@@ -11,77 +11,113 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/styles-global.css" />
+    <link rel="stylesheet" href="../public/styles/styles-global.css" />
   </head>
   <body>
-    <header>
-      <h1>Auto Dice Roller</h1>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Resources</li>
-          <li>Generators</li>
-          <li>Even More Stuff</li>
-          <li>So Much Stuff</li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">DiceHub</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Roller <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Session Scheduler</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Generators
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Vicious Mockery</a>
+              <a class="dropdown-item" href="#">Ones Shots</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.dndbeyond.com/"
+                >D&D Beyond</a
+              >
+            </div>
+          </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <main>
-      <div id="d20">
-        <h2>d20</h2>
-        <img />
-        <form>Input for number of rolls Submit button</form>
-        <button>Roll</button>
+      <div class="container">
+        <div class="row">
+          <div class="col" id="d20">
+            <h2>d20</h2>
+            <img />
+            <form>Input for number of rolls Submit button</form>
+            <button>Roll</button>
+          </div>
+          <div class="col" id="d10">
+            <h2>d10</h2>
+            <img />
+            <form>Input for number of rolls Submit button</form>
+            <button>Roll</button>
+          </div>
+          <div class="col" id="d100">
+            <h2>d100</h2>
+            <img />
+            <form>Input for number of rolls Submit button</form>
+            <button>Roll</button>
+          </div>
+          <div class="col" id="d8">
+            <h2>d8</h2>
+            <img />
+            <form>Input for number of rolls Submit button</form>
+            <button>Roll</button>
+          </div>
+          <div class="col" id="d6">
+            <h2>d6</h2>
+            <img />
+            <form>Input for number of rolls Submit button</form>
+            <button>Roll</button>
+          </div>
+          <div class="col" id="d4">
+            <h2>d4</h2>
+            <img />
+            <form>Input for number of rolls Submit button</form>
+            <button>Roll</button>
+          </div>
+        </div>
       </div>
-      <div id="d10">
-        <h2>d10</h2>
-        <img />
-        <form>Input for number of rolls Submit button</form>
-        <button>Roll</button>
-      </div>
-      <div id="d100">
-        <h2>d100</h2>
-        <img />
-        <form>Input for number of rolls Submit button</form>
-        <button>Roll</button>
-      </div>
-      <div id="d12">
-        <h2>d12</h2>
-        <img />
-        <form>Input for number of rolls Submit button</form>
-        <button>Roll</button>
-      </div>
-      <div id="d8">
-        <h2>d8</h2>
-        <img />
-        <form>Input for number of rolls Submit button</form>
-        <button>Roll</button>
-      </div>
-      <div id="d6">
-        <h2>d6</h2>
-        <img />
-        <form>Input for number of rolls Submit button</form>
-        <button>Roll</button>
-      </div>
-      <div id="d4">
-        <h2>d4</h2>
-        <img />
-        <form>Input for number of rolls Submit button</form>
-        <button>Roll</button>
-      </div>
-      <div id="mods">
+    </main>
+    <aside class="modifiers" id="mods">
+      <div>
         <h3>Add Your Modifiers</h3>
         <form>Space for modifiers</form>
         <button>Add Mods</button>
       </div>
-      <textarea id="output">
-            Roll Output
-        </textarea
-      >
-    </main>
-
-    <footer>&copy;2021 Rachel Gregg</footer>
+    </aside>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">Text Here</p>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
